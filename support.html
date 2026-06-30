@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サポート | オタスケ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --brand-purple:#7F77DD;
+    --paper:#FAF8FC;
+    --ink:#2B2640;
+    --glow-pink:#FF5C8A;
+    --ticket-gray:#DAD5E8;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Noto Sans JP', sans-serif;
+    line-height:1.8;
+  }
+  header{
+    background:var(--brand-purple);
+    color:#fff;
+    padding:48px 24px 64px;
+    text-align:center;
+  }
+  header .eyebrow{
+    font-size:13px;
+    letter-spacing:.12em;
+    opacity:.85;
+    margin-bottom:8px;
+  }
+  header h1{
+    font-family:'Zen Old Mincho', serif;
+    font-weight:700;
+    font-size:clamp(28px,5vw,40px);
+    margin:0;
+    letter-spacing:.04em;
+  }
+  header p{
+    margin:12px 0 0;
+    font-size:14px;
+    opacity:.9;
+  }
+  main{
+    max-width:640px;
+    margin:-32px auto 0;
+    padding:0 20px 64px;
+  }
+  .stub{
+    background:#fff;
+    border-radius:18px;
+    box-shadow:0 12px 32px rgba(43,38,64,.08);
+    overflow:hidden;
+    margin-bottom:28px;
+  }
+  .stub .perforation{
+    position:relative;
+    height:0;
+    border-top:2px dashed var(--ticket-gray);
+    margin:0 24px;
+  }
+  .stub .perforation::before,
+  .stub .perforation::after{
+    content:"";
+    position:absolute;
+    top:-9px;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:var(--paper);
+  }
+  .stub .perforation::before{left:-33px;}
+  .stub .perforation::after{right:-33px;}
+  .stub-body{padding:28px 24px 30px;}
+  .stub-body h2{
+    font-family:'Zen Old Mincho', serif;
+    font-size:19px;
+    margin:0 0 14px;
+    color:var(--brand-purple);
+  }
+  .stub-body p, .stub-body li{
+    font-size:15px;
+    color:var(--ink);
+  }
+  .stub-body ul{padding-left:1.2em; margin:8px 0;}
+  .contact-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:14px 0;
+    border-bottom:1px solid var(--ticket-gray);
+    font-size:14px;
+  }
+  .contact-row:last-child{border-bottom:none;}
+  .contact-row .label{color:#7a7390;}
+  .contact-row .value{font-weight:500; font-variant-numeric:tabular-nums;}
+  a{color:var(--brand-purple); text-decoration:none; font-weight:500;}
+  a:hover{text-decoration:underline;}
+  footer{
+    text-align:center;
+    font-size:12px;
+    color:#9a93ad;
+    padding-bottom:40px;
+  }
+  footer a{color:#9a93ad;}
+  .badge{
+    display:inline-block;
+    background:var(--ticket-gray);
+    color:var(--brand-purple);
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.06em;
+    padding:3px 10px;
+    border-radius:999px;
+    margin-bottom:14px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">OTASUKE SUPPORT</div>
+  <h1>サポート</h1>
+  <p>オタクのライブ活動をまるごと管理</p>
+</header>
+
+<main>
+
+  <div class="stub">
+    <div class="stub-body">
+      <span class="badge">よくある質問</span>
+      <h2>オタスケについて</h2>
+      <p>「オタスケ」は、ライブ・イベントの参戦予定、チケットの申込状況、セトリ記録、推しの管理をまとめて行えるアプリです。</p>
+    </div>
+    <div class="perforation"></div>
+    <div class="stub-body">
+      <h2>よくあるご質問</h2>
+      <p><strong>Q. 通知が届きません</strong><br>
+      端末の通知設定でオタスケの通知が許可されているかご確認ください。また、設定画面の「リマインダー通知」がONになっているかもご確認ください。</p>
+      <p><strong>Q. データはどこに保存されますか?</strong><br>
+      入力された情報はクラウド上のデータベースに保存されます。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご確認ください。</p>
+      <p><strong>Q. 不具合を見つけました</strong><br>
+      下記の問い合わせ先までアプリの操作内容と発生した状況をできるだけ詳しくお知らせください。</p>
+    </div>
+  </div>
+
+  <div class="stub">
+    <div class="stub-body">
+      <h2>お問い合わせ</h2>
+      <div class="contact-row">
+        <span class="label">開発者</span>
+        <span class="value">タコタコ堂</span>
+      </div>
+      <div class="contact-row">
+        <span class="label">メール</span>
+        <span class="value"><a href="mailto:takotakodo@gmail.com">takotakodo@gmail.com</a></span>
+      </div>
+      <div class="contact-row">
+        <span class="label">対応</span>
+        <span class="value">個人開発のため順次対応</span>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  オタスケ &middot; <a href="privacy.html">プライバシーポリシー</a>
+</footer>
+
+</body>
+</html>
